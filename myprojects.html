@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects - Gunveer's Profile Page</title>
+    <meta name="description"
+        content="Check out Gunveer's projects, including Sylvie - a Discord bot, and Handler - a command handler programmed in JavaScript.">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/script.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+            <img width="300" src="./images/headerImage.png" alt="Header Image">
+        </header>
+        <nav>
+            <ul>
+                <li><button onclick="navigateTo('home')">Back to Home</button></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <main>
+                <div class="content-box">
+                    <h2>My Projects</h2>
+                    <hr>
+                    <p>
+                        I have worked on several projects over the years, most of which are in JavaScript.
+                        Two of them are given below:
+                    </p>
+                    <div id="projects">
+                        <div id="project">
+                            <img src="./images/sylvie.jpg" alt="Sylvie Bot Image" style="height: 200px;">
+                            <button onclick="navigateTo('sylvie')">Sylvie</button>
+                            <h3>A Discord bot I coded using Node.js and Discord.JS</h3>
+                        </div>
+                        <hr>
+                        <div id="project">
+                            <img src="./images/handler.png" alt="Multi Bot Script" style="height: 200px;">
+                            <button onclick="navigateTo('handler')">MuliBot Script</button>
+                            <h3>A script that allows you to run multiple bot tokens from a single execution.</h3>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div id="footerimage"></div>
+        <div id="footer">
+            &copy; 2023 EkamAujla. All rights reserved.<br>
+            This website is protected by intellectual property laws.
+        </div>
+    </div>
+</body>
+
+</html>

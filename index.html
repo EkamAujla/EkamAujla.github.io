@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Gunveer Singh's Profile Page - Learn about Gunveer, his projects, education, and social media accounts.">
+    <title>Gunveer's Profile Page</title>
+    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://kit.fontawesome.com/5a3c2b9bf3.js" crossorigin="anonymous"></script>
+    <script>
+        if (page === 'about') {
+            window.location.href = './about.html';
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+            <img width="300" src="./images/headerImage.png" alt="Header Image">
+        </header>
+
+        <nav>
+            <ul>
+                <li><button onclick="navigateTo('about')">About Me</button></li>
+                <li><button onclick="navigateTo('contact')">Contact Me</button></li>
+                <li><button onclick="navigateTo('myresume')">My Resume</button></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="content">
+                <div id="first-section">
+                    <img class="profile-image" src="./images/myPic.jpg" alt="Profile Image">
+                    <div class="content-box">
+                        <h2>Welcome to my Homepage!</h2>
+                        <hr>
+                        <p>Hey there! I am Gunveer Singh, also known as Ekam, and this is my profile page. You can find
+                            some information about me here. Feel free to connect with me on social media.</p>
+                        <div id="audio-div"><audio controls>
+                                <source src="./audio/myAudio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <audio controls>
+                                <source src="./audio/song.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                <div id="index-second-section">
+                    <div class="content-box" style="grid-area: first;">
+                        <div id="index-buttons">
+                            <button onclick="navigateTo('projects')">My Projects</button>
+                            <button onclick="navigateTo('education')">My Education</button>
+                        </div>
+                    </div>
+                    <div class="content-box" style="grid-area: second;">
+                        <p style="margin-top: 5px;">These are a few of my accounts</p>
+                        <div style="display: flex; flex-direction: row; justify-content: center;">
+                            <button onclick="navigateTo('github')"><i class="fa-brands fa-github fa-xl"></i></button>
+                            <button onclick="navigateTo('discord')"><i class="fa-brands fa-discord fa-xl"></i></button>
+                            <button onclick="navigateTo('instagram')"><i
+                                    class="fa-brands fa-instagram fa-xl"></i></button>
+                            <button onclick="navigateTo('whatsapp')"><i
+                                    class="fa-brands fa-whatsapp fa-xl"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer">
+            Thank you teachers.
+            <br>
+            <hr>
+            This page has been recreated by me in order to comply with the newly introduced rules in the project.
+            The new changes made the previous code and color scheme redundant so I made this from scratch.
+        </div>
+
+    </div>
+</body>
+
+</html>
